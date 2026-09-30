@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">评论翻译</string>
+    <string name="a11y_desc">读取评论区文字，将粤语和英语实时翻译成普通话并悬浮显示</string>
+</resources>

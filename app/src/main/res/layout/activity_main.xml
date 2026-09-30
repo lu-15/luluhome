@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🗨 评论实时翻译（粤语/英语 → 普通话）"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="检查权限中…"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnA11y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="① 开启无障碍权限" />
+
+    <Button
+        android:id="@+id/btnOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="② 允许显示悬浮窗" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="开启后，打开 B站/抖音/快手/YouTube 的评论区，粤语评论显示紫色【普通话】，英语评论显示蓝色【译文】，右下角悬浮窗同步滚动。"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="⚠ 已知限制：视频画面上的弹幕是像素渲染，系统不允许读取，本工具只覆盖「评论区」文字。建议关掉本应用的后台省电限制，否则国产 ROM 会杀服务。"
+        android:textSize="12sp"
+        android:textColor="#B00020" />
+
+</LinearLayout>
