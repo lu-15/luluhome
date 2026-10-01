@@ -96,7 +96,7 @@ object OverlayManager {
             layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
         }
 
-        fun mkBtn(label: String, onClick: () -> Unit): TextView =
+         fun mkBtn(label: String): TextView =
             TextView(ctx).apply {
                 text = label
                 setTextColor(Color.parseColor("#AAAAAA"))
