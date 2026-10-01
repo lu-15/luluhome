@@ -102,7 +102,6 @@ object OverlayManager {
                 setTextColor(Color.parseColor("#AAAAAA"))
                 textSize = 14f
                 setPadding(dp(10), dp(2), dp(10), dp(2))
-                setOnClickListener { onClick() }
             }
 
         val btnToggleOn = mkBtn("⏻")
