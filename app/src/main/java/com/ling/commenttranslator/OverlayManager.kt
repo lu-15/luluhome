@@ -105,13 +105,18 @@ object OverlayManager {
                 setOnClickListener { onClick() }
             }
 
-        val btnToggleOn = mkBtn("⏻") { TranslationService.enabled = !TranslationService.enabled }
-        val btnClear = mkBtn("🗑") { listCol?.removeAllViews(); entryCache.clear() }
-        val btnMin = mkBtn("▾") {
-            collapsed = !collapsed
-            listCol?.visibility = if (collapsed) View.GONE else View.VISIBLE
-            btnMin.text = if (collapsed) "▴" else "▾"
-        }
+        val btnToggleOn = mkBtn("⏻")
+        val btnClear = mkBtn("🗑")
+        val btnMin = mkBtn("▾")
+
+        btnToggleOn.setOnClickListener { TranslationService.enabled = !TranslationService.enabled }
+        btnClear.setOnClickListener { listCol?.removeAllViews(); entryCache.clear() }
+        btnMin.setOnClickListener {
+              collapsed = !collapsed
+               listCol?.visibility = if (collapsed) View.GONE else View.VISIBLE
+              btnMin.text = if (collapsed) "▴" else "▾"
+         }
+
 
         header.addView(title)
         header.addView(btnToggleOn)
